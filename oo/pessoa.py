@@ -17,6 +17,10 @@ if __name__ == '__main__':
     print(joelson.cumprimentar())
     print(joelson.nome)
     print(joelson.idade)
+    joelson.sobrenome = 'Cabral' # atributo dinâmico -> não é uma boa prática
+    del joelson.filhos # excluindo um atributo -> também não é uma boa prática
+    print(joelson.__dict__)  # dunder responsável por exibir os atributos de instância
+    print(levi.__dict__)
 
-    for filho in joelson.filhos:
-        print(filho.nome)
+#    for filho in joelson.filhos:
+#        print(filho.nome)
